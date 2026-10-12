@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compresion y Empaquetado - Manual Linux</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Compresion y Empaquetado</h1>
+    </div>
+  </header>
+  <main class="container">
+    <a href="../index.html" class="back-link">&larr; Indice</a>
+    <div class="search-wrapper">
+      <input type="text" class="filter-input" placeholder="Filtrar comando..." autocomplete="off">
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Comando</th>
+            <th>Descripcion</th>
+            <th>Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>tar</code></td>
+            <td>Empaqueta/desempaqueta archivos (tarball).</td>
+            <td><code>tar -czvf backup.tar.gz carpeta/</code></td>
+          </tr>
+          <tr>
+            <td><code>gzip</code></td>
+            <td>Comprime archivos (reemplaza el original).</td>
+            <td><code>gzip archivo.txt</code></td>
+          </tr>
+          <tr>
+            <td><code>gunzip</code></td>
+            <td>Descomprime archivos .gz.</td>
+            <td><code>gunzip archivo.txt.gz</code></td>
+          </tr>
+          <tr>
+            <td><code>bzip2</code></td>
+            <td>Comprime con mayor ratio que gzip.</td>
+            <td><code>bzip2 archivo.txt</code></td>
+          </tr>
+          <tr>
+            <td><code>bunzip2</code></td>
+            <td>Descomprime archivos .bz2.</td>
+            <td><code>bunzip2 archivo.txt.bz2</code></td>
+          </tr>
+          <tr>
+            <td><code>xz</code></td>
+            <td>Comprime con alto ratio de compresion.</td>
+            <td><code>xz archivo.txt</code></td>
+          </tr>
+          <tr>
+            <td><code>unxz</code></td>
+            <td>Descomprime archivos .xz.</td>
+            <td><code>unxz archivo.txt.xz</code></td>
+          </tr>
+          <tr>
+            <td><code>zip</code></td>
+            <td>Crea archivos comprimidos ZIP.</td>
+            <td><code>zip -r archivo.zip carpeta/</code></td>
+          </tr>
+          <tr>
+            <td><code>unzip</code></td>
+            <td>Descomprime archivos ZIP.</td>
+            <td><code>unzip archivo.zip</code></td>
+          </tr>
+          <tr>
+            <td><code>zcat</code></td>
+            <td>Muestra contenido de archivo .gz sin descomprimir.</td>
+            <td><code>zcat archivo.txt.gz</code></td>
+          </tr>
+          <tr>
+            <td><code>zgrep</code></td>
+            <td>Busca dentro de archivos .gz.</td>
+            <td><code>zgrep "error" archivo.log.gz</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Manual de Comandos Linux &mdash; Compresion y Empaquetado</p>
+    </div>
+  </footer>
+  <button id="backToTop" title="Volver arriba">&uarr;</button>
+</body>
+</html>

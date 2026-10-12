@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manual interactivo de comandos Linux: gestión de archivos, redes, procesos, usuarios, compresión, búsqueda e información del sistema.">
+  <meta name="keywords" content="Linux, comandos Linux, manual Linux, bash, terminal, sysadmin, grep, find, ssh, tar">
+  <meta name="author" content="Codex Linux Manual">
+  <meta property="og:title" content="Manual de Comandos Linux">
+  <meta property="og:description" content="Guía y referencia rápida interactiva de comandos esenciales en entornos GNU/Linux.">
+  <meta property="og:type" content="website">
+  <title>Manual de Comandos Linux</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>🐧 Manual de Comandos Linux</h1>
+      <p>Referencia rápida e interactiva de los comandos más utilizados en sistemas GNU/Linux.</p>
+    </div>
+  </header>
+  <main class="container" role="main">
+    <section class="search-section" aria-label="Buscador de comandos">
+      <input type="text" id="searchInput" placeholder="Buscar comando (ej. grep, ssh, tar, chmod)..." autocomplete="off" aria-label="Buscar comandos de Linux">
+    </section>
+    <nav class="categories-nav" aria-label="Categorías de comandos">
+      <ul class="category-cards" role="list">
+        <li class="card">
+          <a href="commands/file-management.html">
+            <span class="card-icon" aria-hidden="true">📁</span>
+            <span class="card-title">Gestión de Archivos</span>
+            <span class="card-desc">ls, cp, mv, rm, mkdir, chmod, chown...</span>
+          </a>
+        </li>
+        <li class="card">
+          <a href="commands/networking.html">
+            <span class="card-icon" aria-hidden="true">🌐</span>
+            <span class="card-title">Red y Conectividad</span>
+            <span class="card-desc">ping, ssh, curl, wget, ip, netstat...</span>
+          </a>
+        </li>
+        <li class="card">
+          <a href="commands/process-management.html">
+            <span class="card-icon" aria-hidden="true">⚙️</span>
+            <span class="card-title">Gestión de Procesos</span>
+            <span class="card-desc">ps, top, kill, htop, nice, systemctl...</span>
+          </a>
+        </li>
+        <li class="card">
+          <a href="commands/users-permissions.html">
+            <span class="card-icon" aria-hidden="true">👤</span>
+            <span class="card-title">Usuarios y Permisos</span>
+            <span class="card-desc">useradd, passwd, sudo, chmod, umask...</span>
+          </a>
+        </li>
+        <li class="card">
+          <a href="commands/compression.html">
+            <span class="card-icon" aria-hidden="true">📦</span>
+            <span class="card-title">Compresión y Empaquetado</span>
+            <span class="card-desc">tar, gzip, zip, bzip2, xz, unzip...</span>
+          </a>
+        </li>
+        <li class="card">
+          <a href="commands/search.html">
+            <span class="card-icon" aria-hidden="true">🔍</span>
+            <span class="card-title">Búsqueda y Filtrado</span>
+            <span class="card-desc">grep, find, locate, awk, sed, cut...</span>
+          </a>
+        </li>
+        <li class="card">
+          <a href="commands/system-info.html">
+            <span class="card-icon" aria-hidden="true">💻</span>
+            <span class="card-title">Información del Sistema</span>
+            <span class="card-desc">uname, df, du, free, uptime, lscpu...</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Manual de Comandos Linux • Codex Monorepo • Referencia Técnica Rápida</p>
+    </div>
+  </footer>
+  <button id="backToTop" title="Volver arriba" aria-label="Volver al inicio de la página">&uarr;</button>
+</body>
+</html>

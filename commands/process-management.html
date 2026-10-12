@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion de Procesos - Manual Linux</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Gestion de Procesos</h1>
+    </div>
+  </header>
+  <main class="container">
+    <a href="../index.html" class="back-link">&larr; Indice</a>
+    <div class="search-wrapper">
+      <input type="text" class="filter-input" placeholder="Filtrar comando..." autocomplete="off">
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Comando</th>
+            <th>Descripcion</th>
+            <th>Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>ps</code></td>
+            <td>Lista procesos en ejecucion.</td>
+            <td><code>ps aux</code></td>
+          </tr>
+          <tr>
+            <td><code>top</code></td>
+            <td>Visor interactivo de procesos en tiempo real.</td>
+            <td><code>top</code></td>
+          </tr>
+          <tr>
+            <td><code>htop</code></td>
+            <td>Version mejorada de top (requiere instalacion).</td>
+            <td><code>htop</code></td>
+          </tr>
+          <tr>
+            <td><code>kill</code></td>
+            <td>Envia una senal a un proceso por PID.</td>
+            <td><code>kill -9 1234</code></td>
+          </tr>
+          <tr>
+            <td><code>pkill</code></td>
+            <td>Mata procesos por nombre.</td>
+            <td><code>pkill firefox</code></td>
+          </tr>
+          <tr>
+            <td><code>killall</code></td>
+            <td>Mata todos los procesos con un nombre dado.</td>
+            <td><code>killall nginx</code></td>
+          </tr>
+          <tr>
+            <td><code>nice</code></td>
+            <td>Ejecuta un comando con prioridad ajustada.</td>
+            <td><code>nice -n 10 make</code></td>
+          </tr>
+          <tr>
+            <td><code>renice</code></td>
+            <td>Cambia la prioridad de un proceso en ejecucion.</td>
+            <td><code>renice 5 -p 1234</code></td>
+          </tr>
+          <tr>
+            <td><code>bg</code></td>
+            <td>Reanuda un proceso en segundo plano.</td>
+            <td><code>bg %1</code></td>
+          </tr>
+          <tr>
+            <td><code>fg</code></td>
+            <td>Trae un proceso a primer plano.</td>
+            <td><code>fg %1</code></td>
+          </tr>
+          <tr>
+            <td><code>jobs</code></td>
+            <td>Lista procesos en segundo plano.</td>
+            <td><code>jobs -l</code></td>
+          </tr>
+          <tr>
+            <td><code>nohup</code></td>
+            <td>Ejecuta un comando inmune a senal HUP.</td>
+            <td><code>nohup ./script.sh &</code></td>
+          </tr>
+          <tr>
+            <td><code>&</code></td>
+            <td>Ejecuta un comando en segundo plano.</td>
+            <td><code>comando &</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Manual de Comandos Linux &mdash; Gestion de Procesos</p>
+    </div>
+  </footer>
+  <button id="backToTop" title="Volver arriba">&uarr;</button>
+</body>
+</html>

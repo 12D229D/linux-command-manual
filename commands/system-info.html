@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informacion del Sistema - Manual Linux</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Informacion del Sistema</h1>
+    </div>
+  </header>
+  <main class="container">
+    <a href="../index.html" class="back-link">&larr; Indice</a>
+    <div class="search-wrapper">
+      <input type="text" class="filter-input" placeholder="Filtrar comando..." autocomplete="off">
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Comando</th>
+            <th>Descripcion</th>
+            <th>Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>uname</code></td>
+            <td>Muestra informacion del kernel.</td>
+            <td><code>uname -a</code></td>
+          </tr>
+          <tr>
+            <td><code>hostname</code></td>
+            <td>Muestra o establece el nombre del host.</td>
+            <td><code>hostname</code></td>
+          </tr>
+          <tr>
+            <td><code>uptime</code></td>
+            <td>Muestra cuanto tiempo lleva encendido el sistema.</td>
+            <td><code>uptime</code></td>
+          </tr>
+          <tr>
+            <td><code>df</code></td>
+            <td>Muestra el uso de espacio en disco.</td>
+            <td><code>df -h</code></td>
+          </tr>
+          <tr>
+            <td><code>du</code></td>
+            <td>Muestra el tamano de directorios y archivos.</td>
+            <td><code>du -sh /home</code></td>
+          </tr>
+          <tr>
+            <td><code>free</code></td>
+            <td>Muestra el uso de memoria RAM y swap.</td>
+            <td><code>free -h</code></td>
+          </tr>
+          <tr>
+            <td><code>lscpu</code></td>
+            <td>Muestra informacion de la CPU.</td>
+            <td><code>lscpu</code></td>
+          </tr>
+          <tr>
+            <td><code>lsblk</code></td>
+            <td>Lista dispositivos de bloque (discos, particiones).</td>
+            <td><code>lsblk</code></td>
+          </tr>
+          <tr>
+            <td><code>lsusb</code></td>
+            <td>Lista dispositivos USB conectados.</td>
+            <td><code>lsusb</code></td>
+          </tr>
+          <tr>
+            <td><code>lspci</code></td>
+            <td>Lista dispositivos PCI.</td>
+            <td><code>lspci</code></td>
+          </tr>
+          <tr>
+            <td><code>top</code></td>
+            <td>Muestra procesos y uso de recursos en tiempo real.</td>
+            <td><code>top</code></td>
+          </tr>
+          <tr>
+            <td><code>vmstat</code></td>
+            <td>Estadisticas de memoria, procesos y CPU.</td>
+            <td><code>vmstat 1 5</code></td>
+          </tr>
+          <tr>
+            <td><code>iostat</code></td>
+            <td>Estadisticas de entrada/salida de discos.</td>
+            <td><code>iostat -x 1</code></td>
+          </tr>
+          <tr>
+            <td><code>dmesg</code></td>
+            <td>Muestra mensajes del kernel (buffer de anillo).</td>
+            <td><code>dmesg | tail</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Manual de Comandos Linux &mdash; Informacion del Sistema</p>
+    </div>
+  </footer>
+  <button id="backToTop" title="Volver arriba">&uarr;</button>
+</body>
+</html>

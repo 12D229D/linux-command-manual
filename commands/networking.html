@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red y Conectividad - Manual Linux</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Red y Conectividad</h1>
+    </div>
+  </header>
+  <main class="container">
+    <a href="../index.html" class="back-link">&larr; Indice</a>
+    <div class="search-wrapper">
+      <input type="text" class="filter-input" placeholder="Filtrar comando..." autocomplete="off">
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Comando</th>
+            <th>Descripcion</th>
+            <th>Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>ip a</code></td>
+            <td>Muestra interfaces y direcciones de red.</td>
+            <td><code>ip addr show</code></td>
+          </tr>
+          <tr>
+            <td><code>ifconfig</code></td>
+            <td>Muestra/configura interfaces de red (deprecated).</td>
+            <td><code>ifconfig eth0</code></td>
+          </tr>
+          <tr>
+            <td><code>ping</code></td>
+            <td>Prueba conectividad con otro host.</td>
+            <td><code>ping -c 4 8.8.8.8</code></td>
+          </tr>
+          <tr>
+            <td><code>traceroute</code></td>
+            <td>Muestra la ruta de paquetes a un host.</td>
+            <td><code>traceroute google.com</code></td>
+          </tr>
+          <tr>
+            <td><code>ss</code></td>
+            <td>Lista conexiones y puertos abiertos.</td>
+            <td><code>ss -tuln</code></td>
+          </tr>
+          <tr>
+            <td><code>netstat</code></td>
+            <td>Lista conexiones de red (deprecated, usar ss).</td>
+            <td><code>netstat -tuln</code></td>
+          </tr>
+          <tr>
+            <td><code>curl</code></td>
+            <td>Realiza peticiones HTTP/HTTPS.</td>
+            <td><code>curl -O https://example.com/file.tar.gz</code></td>
+          </tr>
+          <tr>
+            <td><code>wget</code></td>
+            <td>Descarga archivos desde la web.</td>
+            <td><code>wget https://example.com/file.zip</code></td>
+          </tr>
+          <tr>
+            <td><code>ssh</code></td>
+            <td>Conexion segura a un host remoto.</td>
+            <td><code>ssh usuario@servidor.com</code></td>
+          </tr>
+          <tr>
+            <td><code>scp</code></td>
+            <td>Copia archivos entre hosts via SSH.</td>
+            <td><code>scp archivo user@host:/ruta</code></td>
+          </tr>
+          <tr>
+            <td><code>nslookup</code></td>
+            <td>Consulta DNS.</td>
+            <td><code>nslookup google.com</code></td>
+          </tr>
+          <tr>
+            <td><code>dig</code></td>
+            <td>Consulta DNS detallada.</td>
+            <td><code>dig google.com A</code></td>
+          </tr>
+          <tr>
+            <td><code>host</code></td>
+            <td>Resuelve nombres de dominio.</td>
+            <td><code>host google.com</code></td>
+          </tr>
+          <tr>
+            <td><code>nmap</code></td>
+            <td>Escaneo de puertos de red.</td>
+            <td><code>nmap -sV 192.168.1.1</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Manual de Comandos Linux &mdash; Red y Conectividad</p>
+    </div>
+  </footer>
+  <button id="backToTop" title="Volver arriba">&uarr;</button>
+</body>
+</html>

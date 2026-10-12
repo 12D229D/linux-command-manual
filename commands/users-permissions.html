@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuarios y Permisos - Manual Linux</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Usuarios y Permisos</h1>
+    </div>
+  </header>
+  <main class="container">
+    <a href="../index.html" class="back-link">&larr; Indice</a>
+    <div class="search-wrapper">
+      <input type="text" class="filter-input" placeholder="Filtrar comando..." autocomplete="off">
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Comando</th>
+            <th>Descripcion</th>
+            <th>Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>useradd</code></td>
+            <td>Crea un nuevo usuario.</td>
+            <td><code>useradd -m -s /bin/bash juan</code></td>
+          </tr>
+          <tr>
+            <td><code>usermod</code></td>
+            <td>Modifica un usuario existente.</td>
+            <td><code>usermod -aG docker juan</code></td>
+          </tr>
+          <tr>
+            <td><code>userdel</code></td>
+            <td>Elimina un usuario.</td>
+            <td><code>userdel -r juan</code></td>
+          </tr>
+          <tr>
+            <td><code>passwd</code></td>
+            <td>Cambia la contrasena de un usuario.</td>
+            <td><code>passwd juan</code></td>
+          </tr>
+          <tr>
+            <td><code>groupadd</code></td>
+            <td>Crea un nuevo grupo.</td>
+            <td><code>groupadd developers</code></td>
+          </tr>
+          <tr>
+            <td><code>groupdel</code></td>
+            <td>Elimina un grupo.</td>
+            <td><code>groupdel developers</code></td>
+          </tr>
+          <tr>
+            <td><code>groups</code></td>
+            <td>Muestra los grupos de un usuario.</td>
+            <td><code>groups juan</code></td>
+          </tr>
+          <tr>
+            <td><code>chown</code></td>
+            <td>Cambia propietario y grupo de un archivo.</td>
+            <td><code>chown juan:dev archivo.txt</code></td>
+          </tr>
+          <tr>
+            <td><code>chmod</code></td>
+            <td>Cambia permisos de archivos.</td>
+            <td><code>chmod 755 script.sh</code></td>
+          </tr>
+          <tr>
+            <td><code>sudo</code></td>
+            <td>Ejecuta un comando como superusuario.</td>
+            <td><code>sudo apt update</code></td>
+          </tr>
+          <tr>
+            <td><code>su</code></td>
+            <td>Cambia a otro usuario (root por defecto).</td>
+            <td><code>su - root</code></td>
+          </tr>
+          <tr>
+            <td><code>id</code></td>
+            <td>Muestra UID, GID y grupos del usuario.</td>
+            <td><code>id juan</code></td>
+          </tr>
+          <tr>
+            <td><code>whoami</code></td>
+            <td>Muestra el nombre del usuario actual.</td>
+            <td><code>whoami</code></td>
+          </tr>
+          <tr>
+            <td><code>visudo</code></td>
+            <td>Edita el archivo sudoers de forma segura.</td>
+            <td><code>sudo visudo</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Manual de Comandos Linux &mdash; Usuarios y Permisos</p>
+    </div>
+  </footer>
+  <button id="backToTop" title="Volver arriba">&uarr;</button>
+</body>
+</html>
